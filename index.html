@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Custom Car Icon</title>
+    <style>
+        /* Set height for the map */
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+        /* Style for the custom control (car icon) */
+        .custom-car-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            cursor: pointer;
+        }
+        .custom-car-icon img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Map Div -->
+    <div id="map"></div>
+
+    <!-- Car Icon Control -->
+    <div class="custom-car-icon">
+        <img src="car_icon.png" alt="Car Icon" id="carControl">
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApGxQzXmCQfKj4PsBzi_Y766NQHcSlwLU&callback=initMap" async defer></script>
+
+    <script>
+        let map;
+        let currentLocationMarker;
+
+        // Initialize the Google Map
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 37.7749, lng: -122.4194 }, // Default center (San Francisco)
+                zoom: 12,
+                disableDefaultUI: true // Disable default controls to add custom ones
+            });
+
+            // Car icon control click event to pan to user's location
+            document.getElementById('carControl').addEventListener('click', () => {
+                // Check if Geolocation is available
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition((position) => {
+                        const userLocation = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude
+                        };
+                        
+                        // Move the map to the user's location
+                        map.setCenter(userLocation);
+                        map.setZoom(15);
+
+                        // Add or move marker to current location
+                        if (!currentLocationMarker) {
+                            currentLocationMarker = new google.maps.Marker({
+                                position: userLocation,
+                                map: map,
+                                title: "You are here"
+                            });
+                        } else {
+                            currentLocationMarker.setPosition(userLocation);
+                        }
+                    }, () => {
+                        alert('Geolocation failed');
+                    });
+                } else {
+                    alert('Geolocation not supported by your browser');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
