@@ -36,7 +36,7 @@
         <img src="car_icon.png" alt="Car Icon" id="carControl">
     </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApGxQzXmCQfKj4PsBzi_Y766NQHcSlwLU&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc0wLkVdX7_oloIJEf1z21rrqxBgAWfaU&callback=initMap" async defer></script>
 
     <script>
         let map;
@@ -69,7 +69,12 @@
                             currentLocationMarker = new google.maps.Marker({
                                 position: userLocation,
                                 map: map,
-                                title: "You are here"
+                                title: "You are here",
+                                // Custom icon for marker
+                                icon: {
+                                    url: "https://zamifood.com/wp-content/uploads/2024/06/zamifood-log.png", // URL of the custom icon
+                                    scaledSize: new google.maps.Size(50, 50) // Adjust the size of the icon
+                                }
                             });
                         } else {
                             currentLocationMarker.setPosition(userLocation);
@@ -83,25 +88,5 @@
             });
         }
     </script>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Google Maps Navigation</title>
-    </head>
-    <body>
-        <!-- Link to start navigation to Rudrapur -->
-        <a href="https://www.google.com/maps/dir/?api=1&destination=28.98831000032738,79.35435416147993" target="_blank">
-            Navigate to Rudrapur
-        </a>
-    
-        <!-- Link to start navigation from New Delhi to Rudrapur -->
-        <a href="https://www.google.com/maps/dir/?api=1&origin=28.613939,77.209023&destination=28.98831000032738,79.35435416147993&travelmode=driving" target="_blank">
-            Navigate from New Delhi to Rudrapur by Car
-        </a>
-    </body>
-    </html>
-    
 </body>
 </html>

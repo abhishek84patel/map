@@ -1,0 +1,228 @@
+@media (min-width:768px) {
+    
+    .vc_custom_img1 {
+    margin-top: -260px !important;
+    margin-bottom: -100px;
+    z-index: 9;
+    position: relative;
+}
+div#dev-hero .fl-vc-vehicle-search.fl-search-style--one {
+max-width:500px;
+width:100%
+}
+}
+
+.extra-class1{
+    overflow: inherit !important;
+}
+
+
+.fl-custom-icon-61b2871bf134e5845 .fl-icon-box-wrapper:hover .icon-box-text-content {
+    color: #fff !important;
+}
+
+.row-premium-offers .vc_column_container>.vc_column-inner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+
+.vc_row.vc_column-gap-20 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+html .fl-vc-vehicle-search.fl-search-style--one form .vc-auto-search .col-4 {
+    display: block;
+    margin: 34px 0 0 0;
+    max-width: 100%;
+}
+
+.btn.col-4{
+position: static;
+}
+
+
+.fl-vc-vehicle-search.fl-search-style--one form .btn {
+    position: static;
+}
+
+
+
+
+fl-vc-vehicle-search.fl-search-style--one h2 {
+    color: #000;
+    font-size: 36px;
+    position: relative;
+    width: fit-content;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+
+.fl-vc-vehicle-search.fl-search-style--one form .vc-auto-search .select .jelect-current {
+    background: #ffffff;
+    color: #222222;
+    border: 1px solid grey;
+    border-radius: 20px;
+    transition: .3s ease;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+a.dashicons-phone.mega-menu-link {
+    border: 1px solid red !important;
+    border-radius: 50px !important;
+}
+
+
+.fl-vc-vehicle-search.fl-search-style--one 
+{
+    background-color: #ffffff !important; 
+    border-radius: 20px;
+    
+}
+
+
+.fl-vc-vehicle-search.fl-search-style--one h2 {
+    color: #000;
+    font-size: 36px;
+    position: relative;
+    width: fit-content;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+.fl-vc-vehicle-search.fl-search-style--one form .btn .fl-vc-button-search {
+    text-transform: uppercase;
+    background: #3f64dc !important;
+    padding: 15px 30px;
+    transition: all .3s ease-in-out;
+}
+
+.fl-vc-vehicle-search.fl-search-style--one form .btn .fl-vc-button-search span {
+    font-size: 16px;
+    color: #fff;
+    padding-left: 20px;
+}
+
+
+.fl-vc-vehicle-search.fl-search-style--one h2 {
+    color: #000;
+    font-size: 36px;
+    position: relative;
+    width: fit-content;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+
+
+
+.fl-vc-vehicle-search.fl-search-style--one h2 {
+    color: #000;
+    font-size: 25px;
+    position: relative;
+    width: fit-content;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    line-height: 1.4;
+}
+
+
+
+.fl-resent-cars-vc .fl-recent_auto-isotope .fl-recent_auto--item .fl-recent-car-bottom {
+    display: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.fl-page-heading {
+    display: none !important;
+}
+
+
+
+.fl-page-padding {
+    width: 100%;
+    height: 0px;
+    display: block;
+}
+
+
+
+
+.fl-page-padding.bottom {
+    height: 5px !important;
+}
+
+/*hero section styles*/
+
+@media (max-width:768px){
+    div#dev-hero .fl-vc-vehicle-search.fl-search-style--one {
+padding:30px;
+
+}
+div#dev-hero .fl-vc-vehicle-search.fl-search-style--one h2{
+    font-size:18px;
+}
+    
+}
+@media (max-width:480px){
+    div#dev-hero #findCarNowForm{
+        padding:0 !important;
+    }
+
+    div#dev-hero .fl-vc-vehicle-search.fl-search-style--one{
+        
+     padding: 18px;
+        
+    } 
+   div#dev-hero .btn.col-4{
+        margin:10px;
+    }
+   div#dev-hero .btn-filter{
+       margin:0;
+   }
+   .fl-vc-vehicle-search.fl-search-style--one form .btn .fl-vc-button-search{
+       padding: 19px 37px;
+    border-radius: 30px;
+   }
+   .fl-vc-vehicle-search form .btn button{
+       min-width:0 !important;
+       min-height:0 !important;
+   }
+   
+   /*dev-second section on mobile view single card*/
+   
+   .fl-recent_auto-isotope.vc-cars-wrapper{
+/*min-height:500px;*/
+}
+.fl-recent_auto--item{
+position:unset !important;
+}
+html .fl-resent-cars-vc .fl-recent_auto-isotope .fl-recent_auto--item{
+
+width:100% !important;
+}
+  
+  #dev-pink-section .vc_row.vc_column-gap-20{
+      margin:0 !important;
+  } 
+   
+   
+}
